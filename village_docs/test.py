@@ -67,7 +67,6 @@ def test(request):
         for r in resultData["見積もり情報リスト"]:
             print(r)
             output += f"{r['名称']},{r['摘要']},{r['数量']},{r['単価']},{r['行の合計金額']}\n"
-            # output += r["名称"] + "," + r["摘要"] + "," + r["数量"] + "," + r["単価"] + "," + r["金額"] + "\n"
 
     data = {
         'output': output,
