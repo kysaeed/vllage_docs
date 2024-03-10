@@ -64,6 +64,7 @@ def test(request):
         resultData = json.loads(resultText)
         # print(resultData)
 
+        output += "[名称],[摘要],[数量],[単価],[行の合計金額]"
         for r in resultData["見積もり情報リスト"]:
             print(r)
             output += f"{r['名称']},{r['摘要']},{r['数量']},{r['単価']},{r['行の合計金額']}\n"
