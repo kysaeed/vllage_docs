@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>見積書OCR</title>
+        <style>
+            .pane {
+                positoin: relative;
+                padding: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>見積書OCR</h1>
+
+        <h2>input</h2>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="pane">
+                <input type="file" name="docimage" />
+            </div>
+            <div class="pane">
+                <button type="submit">実行！！</button>
+                （連打しないでください）
+            </div>
+        </form>
+
+        <hr>
+        <h2>output</h2>
+        <div class="pane">
+            <pre>{{output}}</pre>
+        </div>
+    </body>
+</html>

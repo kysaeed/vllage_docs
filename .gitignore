@@ -1,0 +1,4 @@
+village_docs/__pycache__
+.env
+.gc.json
+db.sqlite3
